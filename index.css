@@ -1,0 +1,41 @@
+h1 {
+    margin: 25px;
+    text-shadow: 2px 2px 5px black;
+    text-align: right;
+    color: white;
+}
+
+.row {
+    padding: 10px;
+    margin-top: ;
+}
+
+body {
+    background-image: url("https://s3.postimg.org/4xjk3tbs3/books_768426_19201.jpg");
+    /* http://www.trbimg.com/img-50e7ac8b/turbine/ct-prj-0106-book-preview-2013-20130104 */
+    /* */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
+}
+
+.well {
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    color: white;
+    border: none;
+    text-align: center;
+}
+#search-button {
+    font-weight: ;
+    text-shadow: 2px 2px 3px black;
+}
+
+#search-clear {
+    text-shadow: 2px 2px 3px black;
+}
+
+#random {
+    text-shadow: 2px 2px 3px black;
+}

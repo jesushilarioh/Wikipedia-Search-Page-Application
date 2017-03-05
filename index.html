@@ -3,6 +3,14 @@
     <head>
         <meta charset="utf-8">
         <title>Wikipedia Search Page</title>
+
+        <!-- Bootstrap CSS-->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script src="https://use.fontawesome.com/6b8e78b80a.js"></script>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Anton|Diplomata+SC|Montserrat|Open+Sans|Pacifico|Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
 
@@ -13,7 +21,7 @@
     <div class="col-sm-2"></div>
     <div class="col-sm-8">
 
-        <button type="button" class="btn btn-primary btn-block btn-lg" id="random">Random Wiki</button>
+        <a id="randomLink" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button type="button" class="btn btn-primary btn-block btn-lg" id="random" action="">Random Wiki</button></a>
 
     </div>
     <div class="col-sm-2"></div>
@@ -45,6 +53,13 @@
 </div><!--container-fluid-->
 
 
-
+    <script type="text/javascript" src="index.js"></script>
     </body>
 </html>
+
+
+<!--
+    Helpful resources when building
+    https://www.codecademy.com/en/forum_questions/55ad460dd3292f1a8200050c
+    https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript#Functions
+-->
