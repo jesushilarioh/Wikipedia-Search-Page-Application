@@ -10,64 +10,55 @@
         <script src="https://use.fontawesome.com/6b8e78b80a.js"></script>
         <!-- Google Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Anton|Diplomata+SC|Montserrat|Open+Sans|Pacifico|Roboto" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.3/fetch.min.js"></script>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
 
-        <!-- container-fluid-->
         <div class="container-fluid">
-            <h1 class="title"> Wikipedia Search</h1>
+    <h1 class="h1b"> Wikipedia Search</h1>
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
 
-            <!-- Random Wiki Button -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <a class="randomLink" id="randomLink" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
-                        <button type="button" class="btn btn-primary btn-block btn-lg" id="random" action="">Random Wiki</button>
-                    </a>
-                </div>
-            </div>
-            <!-- /Random Wiki Button -->
+        <button type="button" class="btn btn-primary btn-block btn-lg" id="random">Random Wiki</button>
 
-            <!-- Input group -->
-            <div class="row">
-                <div class="col-sm-12">
-                    <!-- input & buttons -->
-                    <div class="input-group input-group-lg">
-                        <input type="search" class="form-control" placeholder="Search..." id="searchBox">
-                        <span class="input-group-btn">
-                            <!--
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+  <div class="row 1">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 botCol">
+    <div class="input-group input-group-lg">
 
-                            MAY NOT NEED!!! LIKE WORD SEARCH PAGE
+      <input type="search" class="form-control" placeholder="Search..." id="input-search">
+      <span class="input-group-btn">
+        <button class="btn btn-warning" type="button">
+          <span id="search-clear" class="glyphicon glyphicon-remove">
+          </span></button>
+        <button class="btn btn-danger" type="button" id="search-button">
+          <span class="glyphicon glyphicon-search" aria-hidden="true">
+          </span></button>
 
-                            <button class="btn btn-warning" type="button">
-                                <span id="searchClear" class="glyphicon glyphicon-remove"></span>
-                            </button>
+      </span>
+    </div><!-- /input-group -->
+    </div><!--col 1-->
+    <div class="col-sm-2"></div>
+  </div><!--row 1-->
+  <div class="row 2" >
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" id="wiki-links"></div>
+    <div class="col-sm-2"></div>
+  </div><!--row 2-->
+</div><!--container-fluid-->
 
-                            -->
-                            <button class="btn btn-success" type="button" id="searchButton">
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </button>
-                        </span>
-                    </div>
-                    <!-- /input & buttons -->
-                </div>
-            </div>
-            <!-- Input group -->
 
-            <!-- well links -->
-            <div class="row" >
-                <div class="col-sm-12 contents">
-                    <div class="well" id="suggestedArticles"></div>
-                    <iframe class="embad-responsive-item" src="" id="randomPage"></iframe>
-                </div>
-            </div>
-            <!-- /well links-->
-
-        </div>
-        <!--container-fluid-->
-
+        <!-- JQuery-->
+        <script
+			  src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
         <!-- native index.js file-->
         <script type="text/javascript" src="index.js"></script>
+
     </body>
 </html>
 
